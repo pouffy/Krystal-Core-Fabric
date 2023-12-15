@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "krystal_core",
+	"version": "${version}",
+	"name": "Krystal Core",
+	"description": "",
+	"authors": [
+		"PouffyDev"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "ARR",
+	"icon": "krystal_core.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.pouffydev.krystal_core.KrystalCore"
+		],
+		"client": [
+			"com.pouffydev.krystal_core.KrystalCoreClient"
+		],
+		"fabric-datagen": [
+			"com.pouffydev.krystal_core.KrystalCoreDataGenerator"
+		]
+	},
+	"mixins": [
+		"krystal_core.mixins.json"
+	],
+	"accessWidener": "krystal_core.accesswidener",
+	"depends": {
+		"fabricloader": ">=0.15.2",
+		"minecraft": "~1.18.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
